@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.3em;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: hidden;
+}
+
+.container{
+	width:80%;
+	margin:0 auto;	
+
+}
+
+header{
+	width:100%;
+	background:#41B866;
+	color:#FFF;
+	padding-top:2em;
+	padding-bottom:1em;
+	padding-right: 4em;
+
+}
+
+header div {
+	
+	height:33px;
+	line-height:33px;	
+    border-left: 0;
+    border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: initial;
+    float: right;
+	
+	font-size:13px;
+	margin-right:25%;
+	margin-top:6%;
+	list-style-type: none;	
+	color:#41B866;
+	/* max-width: 100%;
+	min-width: 300px */;
+    
+}
+
+header img.img_lang{
+	height: 30px;
+	width: 40px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li{
+	
+	margin-right:10px;
+}
+
+header img.fotoperfil{
+   width:100px;
+   border-radius: 100%;
+   margin-left:46%;
+   margin-top:1%
+}
+
+h1{
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+}
+
+h2{
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1em;
+}
+
+article{
+	padding:40px 0 20px 0;
+	border-bottom:dotted 1px #888282;
+}
+
+article h2{
+	float:left;
+	border-bottom:#21ABC5 2px solid;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	line-height:1.3em;
+	font-size:1em;
+}
+
+article p, article > ul{
+	margin-left:20%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.3em;
+	color:#817C7C;	
+	margin-bottom:1.5em;
+}
+
+/* article p{
+	color:#000
+	
+	
+}
+ */
+article ul li {
+	margin-left:15px;
+	/* list-style:square; */
+	margin-left:5%;	
+}
+
+article h5{
+	/* font-size:1em; */
+	margin-left:24%;
+	/* font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+	line-height:1.3em;
+}
+
+article h3{
+	font-size:1em;
+	margin-left:20%;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.3em;
+}
+
+footer{
+	width:100%;
+	margin-top:3em;
+	padding:2em;
+	
+	background:#41B866;
+	color:#fff;
+}
+
+footer p{
+	text-align:center;	
+	font-size:1.5em;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.5em;
+}
+
+footer a:link, footer a:visited{
+	color:#fff;
+}
+
+footer a:hover{
+	text-decoration:none;
+	color:#827b7b
+}
