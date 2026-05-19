@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Currículum Petru Demetrius Aivancesei</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
@@ -10,37 +11,34 @@
 
 
 <header>
-    <hgroup>
-	<h1>Petru Demetrius Aivancesei</h1>
-    <h2>Currículum Vitae</h2>
-    </hgroup>
-	
-    <img class="fotoperfil" src="fotodemy.jpg" alt="Mi Nombre"/>
-	
-	
-	
-	<div class="polylang">
-	<ul>
-		<li class="lang-es">
-			<a lang="es-ES" hreflang="es-ES" href="index.html">
-			<img class="img_lang" src="ES_flagLanguages.png" title="Español" alt="Español" width="16" height="11"/>
+	<nav class="idiomas">
+		<button class="btn-pdf" onclick="window.print()" title="Descargar como PDF">
+			📄 Descargar PDF
+		</button>
+
+		<div class="idiomas-buttons">
+			<span class="idiomas-label">Selecciona idioma:</span>
+			<a lang="es-ES" hreflang="es-ES" href="index.html" title="Español" class="btn-idioma">
+				<span class="lang-icon" aria-hidden="true">🌐</span>
+				<span>Español</span>
 			</a>
-			</li>
-			
-			<li class="lang-en">
-			<a lang="en-GB" hreflang="en-GB" href="en.html">
-			<img class="img_lang" src="EN_flagLanguages.png" title="Inglés" alt="Română" width="16" height="11"/>
+			<a lang="en-GB" hreflang="en-GB" href="en.html" title="English" class="btn-idioma">
+				<span class="lang-icon" aria-hidden="true">🌐</span>
+				<span>English</span>
 			</a>
-			</li>
-			
-			<li class="lang-en">
-			<a lang="ro-RO" hreflang="ro-RO" href="ro.html">
-			<img class="img_lang" src="RO_flagLanguages.png" title="Rumano" alt="Rumano" width="16" height="11">
+			<a lang="ro-RO" hreflang="ro-RO" href="ro.html" title="Română" class="btn-idioma">
+				<span class="lang-icon" aria-hidden="true">🌐</span>
+				<span>Română</span>
 			</a>
-			</li>
-	</ul>			
-	
-	<!-- <span title="English"><a lang="es" href="curriculum_PetruDemetrius_EN.html">Versión en Inglés</a></span> -->
+		</div>
+	</nav>
+
+	<div class="titulo-cv">
+		<h1>Petru Demetrius Aivancesei</h1>
+		<h2>Currículum Vitae</h2>
+	</div>
+
+	<img class="fotoperfil" src="fotodemy.jpg" alt="Petru Demetrius Aivancesei"/>
 </header>
 
 <div class="container">
@@ -48,30 +46,57 @@
 	
 	
 	<article>    			
-    	<h2>Resumen</h2>        
-          <p>Experiencia de mas de 12 años en el dominio IT software y hardware. <br>Especialmente en la parte de pruebas de software, soporte técnico y administración de servidores.</p>        
+	    	<h2>Resumen</h2>
+	           <p>Amplia experiencia en IT, QA y automatización de pruebas, con trayectoria profesional desde 2007.<br>Experto en testing funcional, no funcional y automatización con frameworks BDD (Behave, Cucumber) y Selenium.<br>Experiencia sólida en diseño de estrategias de testing, gestión de calidad en entornos Agile e implementación de CI/CD pipelines.</p>
     </article>
 	<article>    			
     	<h2>Experiencia profesional</h2>
-		<br><br>
-		<h3>Zemsania SL, Software Development Engineer in Test – Prj. Stratos / Dynamic Discounting - Santander, Madrid</h3>
-		<p>octubre 2021 - actualmente</p>
+
+		<div class="job-block">
+		<h3>Minsait, QA Automation Engineer - Proyecto SantanderGo/Certo - Santander, Madrid</h3>
+		<p>abril 2026 - actualmente</p>
+		<p>Proyecto principal: SantanderGo / Certo (Canales Asistidos).</p>
 		<ul>
-			<li>Automatización de pruebas frontend y backend con framework basado en BDD desarrollado en Python con Selenium y Behave.</li>
-			<li>Tests automáticos de APIs mediante Python, microservicios Kafka, Amazon S3.</li>
-			<li>Pruebas automáticas de arquitectura basada en eventos usando Python integrado con el framework BDD y pruebas automáticas de bases de datos relacionales: Oracle, MySQL y PostgreSQL.</li>
-			<li>Uso de Micro Focus ALM como repositorio de pruebas y evidencias de los planes de pruebas. Integración con Jenkins y Cloudbees para el lanzamiento de los test automatizados de regresión del software de manera programada y desatendida.</li>
-			<li>Asegurar el modelo de pruebas Agile.</li>
-			<li>Proporcionar soporte para definir correctamente las historias de usuario.</li>
-			<li>Diseñar una estrategia de Calidad.</li>
-			<li>Diseñar y Ejecutar pruebas Manuales y/o Exploratorias.</li>
-			<li>Crear y Ejecutar Script automáticos.</li>
-			<li>Registrar y Gestionar defectos.</li>
-			<li>Gestionar las necesidades de las pruebas(datos, entornos, ...).</li>
-			<li>Coordinar las Pruebas Especiales(QAT, Seguridad, Rendimiento, ...).</li>
-			<li>Impulsar las iniciativas del CoE(BDD, Shift-left rendimiento, ...).</li>
+			<li>Diseño y evolución del framework de automatización BDD (Behave/Talos) para pruebas E2E.</li>
+			<li>Automatización sobre micro-frontends con Shadow DOM y componentes web anidados.</li>
+			<li>Pruebas funcionales y de integración en módulos como Customer Profile, Security Levels, Nimbus, Inter Toolbar, Buscador de Clientes y Shell.</li>
+			<li>Diseño y ejecución de pruebas de rendimiento con JMeter para Home, Ficha y Agenda.</li>
+			<li>Gestión de ramas Git, datos de prueba por entorno (DEV/PRE) y soporte a la integración continua.</li>
+			<li>Definición de escenarios por sprint, análisis de resultados y seguimiento de incidencias en Jira.</li>
+		</ul>
+		</div>
+
+		<div class="job-block">
+		<h3>Zemsania SL, Software Development Engineer in Test - Santander, Madrid</h3>
+		<p>octubre 2021 - abril 2026</p>
+		<p>Participación en varios proyectos dentro del ecosistema Santander, orientados a asegurar la calidad funcional y técnica de soluciones web, APIs y arquitectura basada en eventos.</p>
+
+		<h4>Proyecto: Stratos</h4>
+		<ul>
+			<li>Diseño y mantenimiento de casos de prueba funcionales y de regresión para frontend y backend.</li>
+			<li>Automatización de pruebas con framework BDD en Python (Behave + Selenium).</li>
+			<li>Ejecución de pruebas manuales y exploratorias para validar nuevas funcionalidades antes de salida.</li>
+			<li>Registro, seguimiento y validación de defectos en coordinación con equipos de desarrollo y producto.</li>
 		</ul>
 
+		<h4>Proyecto: Dynamic Discounting</h4>
+		<ul>
+			<li>Automatización de pruebas de API y validaciones de negocio con Python.</li>
+			<li>Pruebas sobre microservicios y flujos asíncronos con Kafka y almacenamiento en Amazon S3.</li>
+			<li>Validación de datos en bases relacionales (Oracle, MySQL y PostgreSQL) para asegurar consistencia end-to-end.</li>
+			<li>Integración de ejecuciones automáticas en Jenkins/CloudBees para regresión continua.</li>
+		</ul>
+
+		<h4>Proyecto: Certo - SantanderGo</h4>
+		<ul>
+			<li>Definición de estrategia de pruebas y cobertura por historias de usuario en entorno Agile.</li>
+			<li>Diseño de escenarios de aceptación y apoyo al refinement para mejorar la testabilidad de requisitos.</li>
+			<li>Coordinación de necesidades de testing (datos, entornos y evidencias) y reporte de resultados.</li>
+			<li>Colaboración en iniciativas de mejora de calidad del CoE (BDD y shift-left en pruebas).</li>
+		</ul>
+		</div>
+
+		<div class="job-block">
 		<h3>Krell Consulting, QA Tester de software - SCIB Digital Platform- Santander, Madrid</h3>
 		<p>mayo 2021 - septiembre 2021</p>
 		<ul>
@@ -84,6 +109,9 @@
 			<li>Participación activa en las ceremonias típicas Agile: Sprint Planing, Daily, Sprint Reviews, Sprint Retrospective, Sprint Refinning.</li>
 			<li>Automatizaciones con Cypress.</li>			
 		</ul>
+		</div>
+
+		<div class="job-block">
 		<h3>AtSistemas S.A, Tester de software - Firefly en El Corte Inglés, Madrid</h3>
 		<p>noviembre 2020 - abril 2021</p>
 		<ul>
@@ -94,17 +122,21 @@
 			<li>Interrelación con el DevOps para la implementación de los test automatizados en el flujo de integración/distribución continuas(CI/CD).</li>
 			<li>JIRA y Confluence como herramientas de documentación, reporte de incidencias, métricas con indicadores para obtener un resumen del proyecto.</li>
 		</ul>
+		</div>
+
+		<div class="job-block">
 		<h3>Monitive, Tester y Traducciones</h3>
 		<p>febrero 2020 - noviembre 2020</p>
 		<ul>
 			<li>Testing en la parte de Frontend.</li>
 			<li>Traducciones del servicio de Monitive en castellano.</li>
 		</ul>
-		
+		</div>
+
+		<div class="job-block">
 		<h3>Altran, Tester del Software - Sales Force en PSA, Madrid</h3>
 		<p>diciembre 2019 – febrero 2020</p>
-		<!-- <h5>Consultor Tester del Software SalesForce para el cliente PSA</h5> -->
-		<ul>          
+		<ul>
 		  <li>QA Salesforce Tester en entorno Agile en la parte de Leads.</li>
 		  <li>Definición de casos de prueba según User Stories.</li>
 		  <li>Ejecución de los casos de prueba para las US de cada sprint.</li>
@@ -113,15 +145,18 @@
 		  <li>Creación y configuración del entorno con los datos necesarios para las pruebas.</li>
 		  <li>Participación activa en las reuniones semanales tanto con el cliente como reuniones internas.</li>
         </ul>
-		
+		</div>
+
+		<div class="job-block">
 		<h3>EDB, Tecnico de sistemas SSCC en BBVA, Madrid</h3>
 		<p>agosto 2019 - diciembre 2019</p>
-		
-		<ul>          
+		<ul>
 		  <li>Mantenimiento y soporte onsite/remoto en los edificios corporativos.</li>
 		  <li>Gestión y resolución de incidencias y del software en el puesto del usuario, usando Tivoli y Escritorio Remoto.</li>		  
         </ul>
-		
+		</div>
+
+		<div class="job-block">
 		<h3>Autónomo, Ciudad Real / Madrid</h3>
 		<p>marzo de 2018 – agosto 2019</p>
 		<ul>
@@ -129,28 +164,32 @@
 			<li>Creacion de script para automatizar procesos de venta - archivos CSV.</li>
 			<li>Servicios de apoyo comercial e informatico en Autohaus Seebachgroup.</li>			
 		</ul>
-		
-		<h3>DocPath Document Solution S.L, QA Tester Software - departamento Desarrollo, Ciudad Real</h3>
+		</div>
+
+		<div class="job-block">
+		<h3>DocPath Document Solution S.L, Madrid / Ciudad Real</h3>
+
+		<h4>Proyecto: Departamento de Desarrollo - QA Tester Software</h4>
 		<p>2013 – 2018</p>
-		    <ul>				
-				<li>Pruebas de validación e integración de software DocPath.</li>
-				<li>Creación, actualización y modificación de documentación sobre los Tests actuales.</li>
-				<li>Diagnóstico e interpretación déspues de la ejecución de los test automaticos.</li>
-				<li>Revisión del codigo o scripts creados para automatizaciones de los tests.</li>
-				<li>Comunicacion activa con el equipo de desarrollo en deteccion de bugs y su arreglo.</li>				
-				<li>Creación y automatización de los procesos de calidad de software con scripts, Python, Selenium, Java.</li>
-			</ul>
-		  
-		<h3>DocPath Document Solution S.L, Analista y soporte - BBVA, Madrid</h3>
-		<p>2010 – enero 2013<p>
-		<ul>          
-		  <li>Migraciones de plantillas Jetform.</li>
-		  <li>Resolución de incidencias.</li>
-		  <li>Participación a las reuniones de planificación semanal en equipo Agile.</li>
-		  </ul>		
-		
-		<h3>DocPath Document Solution S.L, Técnico de calidad software, Madrid</h3>		
-		<p>2007 – 2010<p>
+		<ul>
+			<li>Pruebas de validación e integración de software DocPath.</li>
+			<li>Creación, actualización y modificación de documentación sobre los Tests actuales.</li>
+			<li>Diagnóstico e interpretación déspues de la ejecución de los test automaticos.</li>
+			<li>Revisión del codigo o scripts creados para automatizaciones de los tests.</li>
+			<li>Comunicacion activa con el equipo de desarrollo en deteccion de bugs y su arreglo.</li>
+			<li>Creación y automatización de los procesos de calidad de software con scripts, Python, Selenium, Java.</li>
+		</ul>
+
+		<h4>Proyecto: BBVA - Analista y Soporte</h4>
+		<p>2010 – enero 2013</p>
+		<ul>
+			<li>Migraciones de plantillas Jetform.</li>
+			<li>Resolución de incidencias.</li>
+			<li>Participación a las reuniones de planificación semanal en equipo Agile.</li>
+		</ul>
+
+		<h4>Proyecto: Técnico de Calidad Software</h4>
+		<p>2007 – 2010</p>
 		<ul>
 			<li>Definición, registro y ejecución de pruebas de calidad funcionales (unitarias,aceptación,integración,regresión) y no funcionales (carga, estrés, escalabilidad, portabilidad).</li>
 			<li>Análisis de requisitos enfocado en las pruebas de software.</li>
@@ -162,150 +201,79 @@
 			<li>Migraciones de plantillas Jetform a DocPath.</li>
 			<li>Gestión de hardware y material informático.</li>
 		</ul>
-				
-		<h3>Arte Final, Dependiente IT, Madrid</h3>		
+		</div>
+
+		<div class="job-block">
+		<h3>Arte Final, Dependiente IT, Madrid</h3>
 		<p>2006 - 2007</p>
-		<ul>          
-		  <li>Montaje e instalacion ordenadores.</li>	  
-		  <li>Administracion del local.</li>
-		  <li>Venta de todo tipo de componentes de ordenadores.</li>
+		<ul>
+			<li>Montaje e instalacion ordenadores.</li>
+			<li>Administracion del local.</li>
+			<li>Venta de todo tipo de componentes de ordenadores.</li>
 		</ul>
-    </article>   
+		</div>
+    </article>
     
    
 	
 	<article>
-    	<h2>Conocimientos</h2><br><br>
-		
-		<h3>Sistemas operativos y otras aplicaciones:</h3>
+    	<h2>Conocimientos</h2>
+
+		<h3>QA y automatización de pruebas</h3>
 		<ul>
-			<li>Microsoft Windows Ms-Dos, XP, 7, 10.</li>
-			<li>iSeries (OS400, Z/oS, OS390, AIX).
-				<ul>
-					<li>Instalación, configuración y administración de programas con shell.</li>
-					<li>Configuración de demonios InfoPrint.
-					<li>Conexiones 3270.</li>
-					<li>Parametrización ADCD.</li>
-					<li>Instalación, configuración y ejecución de Hercules con Z/oS.</li>
-					<li>Creación de consola maestra (master console).</li>
-					<li>Conexiones TSO, CICS.</li>
-					<li>Modificadores para imprimir archivos AFP a un SPOOL de impresión.</li>
-					<li>Modificadores para imprimir archivos AFP a un DATASET.</li>
-					<li>Enviar archivos AFPDS a Output QUEUE.</li>
-					<li>Creación de DATASET para montar particiones NFS.</li>
-					<li>Uso de DATASET partitioned y sequencial.</li>
-					<li>Configuración de red E20 sysctl.</li>
-					<li>Añadir usuarios.</li>
-					<li>Acceder a la parte ISPF a una consola OMVS.</li>
-					<li>Descargar DATASET vía ftp.</li>
-					<li>Borrar un Job(Purge).</li>
-					<li>Montar y desmontar particiones NFS.</li>
-					<li>Transferir archivos ASCII a Z/oS en formato EBCDIC.</li>	
-				</ul>
-			</li>
-			<li>Linux Debian, Ubuntu, RedHat, Slackware, HPux, Solaris, OpenSuse, Unix.</li>		  
-			<li>Apache HTTP Server, FTP Server, DNS (BIND), SSH server (SFTP, SCP).</li>		  
-			<li>Consultas y manejo Bases de Datos SQL, DB2, Oracle, MySql, Mongo DB, CouchBase.</li>		  
-			<li>Virtualización (VMware Server, VMware ESX/EXSi, Hyper-V Core).</li>		  
-			<li>Redes TCP/IP.</li>		  
-			<li>Scripting Bash/Shell y CMD.</li>		  
-			<li>Trabajo con Expresiones Regulares para distintos lenguajes de programación.</li>		  	  
-			<li>Crear scripts para programas con UI con Automate.</li>
-			<li>Utilizar en un proyecto amplio de programación de la biblioteca Sikuli con Java.</li>			
-			<li>Gestor de proyectos: RedMine, Remedy, Jira, Confluence, BaseCamp, Trello, Slack, Magallanes(DocPath).</li>			
-			<li>PyCharm, Eclipse, Visual Studio Code, Intellij IDEA, Sublime Text, Notepad++.</li>
-			<li>Docker, Docker-compose, Zookeeper.</li>
-			<li>Servidores Web: NPM, Node.js, Apache, TomCat, IIS.</li>
-			<li>Postman para peticiones HTTP (get, post, delete, update) para probar API REST.</li>
-			<li>Terminales remoto Putty, 3270, TeamViewer, VNC.</li>
-			<li>Crear entorno, configuración e uso de aplicaciones para Citrix Server y Citrix Client.</li>
-			<li>Control de versiones con GIT-Flow, GitHub.</li>
-			<li>Kafka Tool, Conduktor.</li>
-        </ul>
-		
-		<h3>Desarrollo:</h3>
+			<li>Automatización de pruebas funcionales y de regresión con Python + Selenium.</li>
+			<li>BDD aplicado con Behave, Cucumber y Gherkin.</li>
+			<li>Diseño y ejecución de pruebas manuales y exploratorias.</li>
+			<li>Gestión de defectos, evidencias y seguimiento de calidad en ciclos Agile.</li>
+		</ul>
+
+		<h3>APIs, datos y arquitectura</h3>
 		<ul>
-			<li>Conocimiento de programación Python con Selenium avanzado, Java, C++.</li>		  
-			<li>Desarrollo HTML, CSS XML/JSON.</li>
-			<li>Desarrollo de programas utilizando archivos CSV.</li>
-			<li>Wordpress profesional, Avada.</li>
-			<li>Conocimientos aplicados de BDD con librerias Behave, Cucumber en Python 3.0 y Java.</li>
-			<li>BDD a aplicat cu Behave, bibliotecile de Cucumber cu Python 3.0 și Java</li>
-			<li>Jenkins, Bitbucket.</li>
-			<li>Maven.</li>
-			<li>Gherkin.</li>
-			<li>Karate DSL.</li>		  
-        </ul> 
-		
-		<h3>Procesamiento gráfico / video:</h3>
+			<li>Testing de APIs REST con Postman y scripts en Python.</li>
+			<li>Validación de datos en Oracle, MySQL, DB2, MongoDB y Couchbase.</li>
+			<li>Pruebas en arquitecturas basadas en eventos con Kafka.</li>
+		</ul>
+
+		<h3>CI/CD y herramientas de desarrollo</h3>
 		<ul>
-          <li>Adobe Photoshop.</li>		  
-		  <li>Adobe Premiere.</li>		  
-		  <li>Adobe Illustrator.</li>		  
-        </ul>
-		
-		<h3>Aplicaciones ofimática:</h3>
+			<li>Integración de pruebas automáticas con Jenkins, CloudBees y Bitbucket.</li>
+			<li>Control de versiones con Git / GitFlow.</li>
+			<li>Entornos de trabajo: PyCharm, IntelliJ IDEA, VS Code, Eclipse y Notepad++.</li>
+		</ul>
+
+		<h3>Sistemas, infraestructura y soporte técnico</h3>
 		<ul>
-          <li>Microsoft Word, Microsoft Excel, Microsoft Access, Microsoft Outlook, Microsoft Publisher, OpenOffice.</li>		  
-        </ul>		
-		       
+			<li>Sistemas operativos: Windows, Linux (Debian, Ubuntu, RedHat, OpenSuse, Unix) e iSeries (OS400, Z/oS, OS390, AIX).</li>
+			<li>Administración básica de servidores y servicios: Apache, FTP, DNS (BIND), SSH/SFTP/SCP.</li>
+			<li>Virtualización y entornos: VMware, Hyper-V, Docker, Docker Compose y Citrix.</li>
+			<li>Scripting y operación: Bash/Shell, CMD, expresiones regulares y trabajo con terminales remotos (Putty, TeamViewer, VNC, 3270).</li>
+		</ul>
+
+		<h3>Desarrollo y otras competencias técnicas</h3>
+		<ul>
+			<li>Programación: Python, Java y C++.</li>
+			<li>Tecnologías web y datos: HTML, CSS, XML/JSON y CSV.</li>
+			<li>Herramientas y gestión: Jira, Confluence, RedMine, Trello, Slack, BaseCamp y Remedy.</li>
+			<li>CMS y ofimática: WordPress (Avada), Microsoft Office y OpenOffice.</li>
+			<li>Procesamiento gráfico y vídeo: Adobe Photoshop, Premiere e Illustrator.</li>
+		</ul>
+
     </article>
 	
 	<article>    			
     	<h2>Estudios</h2>						
-        <ul>          
-			<li>2008 
-				<ul>
-					<li>Seminario de iniciación - Diseño productos y soluciones Docpath, 16 horas.</li>
-					<li>Macromedia Flash, 40 horas.</li>
-					<li>Linux usuario por IBM, 30 horas.</li>
-				</ul>
-			</li>		
-			<!-- <li>2009
-				<ul>
-			 		<li>Admisión a UNED para carrera ING. Técnico en Informática de Sistemas - Madrid.</li>
-			 	</ul>		
-			</li> -->
-			<li>2011
-				<ul>
-			 	<li>Diseño de sitios web con Dreamweaver por IBM, 20 horas.</li>		
-			 	</ul>
-			</li>
-			<li>2015 
-				<ul>
-				<li>Especialista TIC en PROGRAMACION CON JAVA SE STANDARD EDITION, 96 HORAS.</li>
-				</ul>
-			</li>
-			<li>2016
-				<ul>
-					<li>Introducción a la Programación con Python (Autor: Willis Polanco) 8h.</li>
-					<li>Curso de Python online (@maikolEdu) 4h  - online.</li>						
-				</ul>
-			</li>
-			<li>2020
-				<ul>
-					<li>Curso Maestro de Python 3, 20h.</li>
-					<li>Git y GitHub Completo Desde Cero - Udemy  por Jose Javier Villena 4,5h online.</li>
-				</ul>
-			</li>
-			<li>2021
-				<ul>
-					<li>Arquitectura dirigidas por Eventos y Apache Kafka por Ruben Gomez Garcia 16 horas online</li>
-					<li>Selenium WebDriver with Java & Cucumber BDD por Tim Short 6,5h online.</li>
-					<li>Curso maestro de Web Scraping: Extracción de Datos de la Web 15 h online.</li>
-					<li>AssertJ: Fluent Assertion In Test Automation 1h online.</li>
-					<li>Introduction to POSTMAN - A Beginners guide 1,5 horas online.</li>
-					<li>Coding and testing an authentication API [NodeJs + Cypress] 2 horas online.</li>
-					<li>Introducción a Azure 2 horas online.</li>
-				</ul>
-			</li>
-			<li>2022
-				<ul>
-					<li>Master: Selenium con Python Test Qa Automation (Autor: Rodrigo Villanueva Nieto) 20 horas online</li>
-					<li>Object Oriented Programming for beginners - Using Python 3 horas online.</li>
-				</ul>
-			</li>
-        </ul>
+		<div class="job-block">
+			<h4>Formación y cursos relevantes (2008 - 2022)</h4>
+			<ul>
+				<li><strong>2008:</strong> Seminario de iniciación en diseño de productos y soluciones DocPath (16h), Macromedia Flash (40h) y Linux usuario por IBM (30h).</li>
+				<li><strong>2011:</strong> Diseño de sitios web con Dreamweaver por IBM (20h).</li>
+				<li><strong>2015:</strong> Especialista TIC en Programación con Java SE Standard Edition (96h).</li>
+				<li><strong>2016:</strong> Introducción a la Programación con Python (8h) y curso de Python online (@maikolEdu, 4h).</li>
+				<li><strong>2020:</strong> Curso Maestro de Python 3 (20h) y Git/GitHub Completo desde Cero (4,5h).</li>
+				<li><strong>2021:</strong> Arquitectura orientada a eventos con Apache Kafka (16h), Selenium WebDriver with Java & Cucumber BDD (6,5h), Web Scraping (15h), AssertJ (1h), Postman (1,5h), API authentication con NodeJS + Cypress (2h) e Introducción a Azure (2h).</li>
+				<li><strong>2022:</strong> Master Selenium con Python QA Automation (20h) y Object Oriented Programming with Python (3h).</li>
+			</ul>
+		</div>
     </article>
 	
 	 <article>
@@ -330,7 +298,7 @@
 			<li>español (C1),</li>		  
 			<li>inglés (B2),</li>		  
 			<li>francés (A2).</li>
-			<li>chino(A).</li>	  
+			<li>chino (A).</li>
         </ul>
     </article>
 	<article>
@@ -350,7 +318,8 @@
 
 
 <footer>
- <p>Correo electronico:<a href="mailto:petrudemetrius@hotmail.com">petrudemetrius@hotmail.com</a> <br> Movíl: <a href="tel:+34657497927">+34 657 497 927</a></p>
+ <p>✉ <a href="mailto:petrudemetrius@hotmail.com">petrudemetrius@hotmail.com</a></p>
+ <p>📱 <a href="tel:+34657497927">+34 657 497 927</a></p>
 </footer>
 
 
